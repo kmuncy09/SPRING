@@ -6,50 +6,17 @@ head {
     h1 {
         text-align: center;
     }
-    button {
-        align-items: left;
-    }
 }
-body{
-    color: white;
-    background-color: rgb(27, 70, 27);
+button {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin:10px;
+    background-color:white;
 }
-.languageButtons{
-    background-color:rgb(63, 63, 63);
-    color:white;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto auto auto;
+.createAnAccount {
+    display:none;
 }
-.persian{
-    grid-row:1;
-    grid-column:1;
-}
-.english{
-    grid-row:1;
-    grid-column:2;
-}
-.spanish{
-    grid-row:2;
-    grid-column:1;
-}
-.german{
-    grid-row:2;
-    grid-column:2;
-}
-.arabiac{
-    grid-row:3;
-    grid-column:1;
-}
-.turkish{
-    grid-row:3;
-    grid-column:2;
-}
-.french{
-    grid-row:4;
-    grid-column:1;
-}
-.hindi{
-    grid-row:4;
-    grid-column:2;
+.otherQuestion {
+    display: none;
 }

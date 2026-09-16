@@ -9,17 +9,6 @@
         <script defer src="script.js"></script>
     </head>
     <body>
-        <h2>What language would you like to continue in?</h2>
-        <div class="languageButtons">
-            <button class="persian">Persian</button>
-            <button class="english">English</button>
-            <button class="spanish">Spanish</button>
-            <button class="german">German</button>
-            <button class="arabiac">Arabiac</button>
-            <button class="turkish">Turkish</button>
-            <button class="french">French</button>
-            <button class="hindi">Hindi</button>
-        </div>
         <h2>Log in to SPRING</h2>
         <p>Sign into your account</p>
         <div class="logInBox">
@@ -34,17 +23,62 @@
             <h3>Username:</h3>
             <input class="username">
             <h3>Password:</h3>
+            <input class="password">
             <h3>Confirm Password:</h3>
             <input class="passwordConfirm">
             <h3>1. Basic Information</h3>
             <p>How old are you?</p>
-            <input class="age">
-            <p>What is your job?</p>
-            <input class="job">
+            <div class="age">
+                <button>Under 18</button>
+                <button>18-29</button>
+                <button>30-39</button>
+                <button>40-49</button>
+                <button>50-59</button>
+                <button>Over 60</button>
+            </div>
+            <p>What industry do you work in?</p>
+            <div class="job">
+                <button>Retail</button>
+                <button>Tech</button>
+                <button>Education</button>
+                <button>Hospitality</button>
+                <button>Banking</button>
+                <button>Government</button>
+                <button>Healthcare</button>
+                <button>Law</button>
+                <button>Manufactoring</button>
+                <button>Design</button>
+                <button>Research</button>
+                <button>Real Estate</button>
+                <button>Construction</button>
+                <button>Entertainment</button>
+                <button>I am a student</button>
+                <button class="other">Other</button>
+                <button>None</button>
+            </div>
             <p>How often do you think about the environmental impact of your behavior on a normal day</p>
-            <input class="environmentalThoughts">
+            <div class="environmentalThoughts">
+                <button>Always</button>
+                <button>Often</button>
+                <button>Sometimes</button>
+                <button>Rarely</button>
+                <button>Never</button>
+            </div>
             <p>How many times did you intentionally do something to help the environment last week?</p>
-            <input class="environmentalActions">
+            <div class="environmentalActions">
+                <button>O</button>
+                <button>1-2</button>
+                <button>3-4</button>
+                <button>5+</button>
+            </div>
+            <p>How much free time do you have for 5-10 minute activities?</p>
+            <div class="freeTime">
+                <button>Very little/None</button>
+                <button>Some</button>
+                <button>Medium</button>
+                <button>A lot</button>
+                <button>Endless</button>
+            </div>
             <h3>2. Habits and concerns</h3>
             <p>What is your biggest barrier? Choose up to 3.</p>
             <div class="barrierAnswers">
@@ -55,10 +89,16 @@
                 <button>I feel it won't make much difference</button>
                 <button>It isn't interesting to me</button>
                 <button>None</button>
-                <button>Other</button>
+                <button class="other">Other</button>
             </div>
             <p>How likely are you to do a simple 5-10 minute task suggested each day?</p>
-            <input class="taskWillingness">
+            <div class="taskLikelihood">
+                <button>Very likely</button>
+                <button>Likely</button>
+                <button>Neutral</button>
+                <button>Unlikely</button>
+                <button>Very unlikely</button>
+            </div>
             <p>Which habit or concern would you most like to change now?</p>
             <input class="habits">
             <p>Which topics interest you most? Choose up to 3.</p>
@@ -72,7 +112,7 @@
                 <button>Planting</button>
                 <button>Reusing items</button>
                 <button>Reducing air pollution</button>
-                <button>Other</button>
+                <button class="other">Other</button>
             </div>
             <h3>3.Personalization</h3>
             <p>What should suggestions be personalized around? Choose up to 3.</p>
@@ -84,8 +124,90 @@
                 <button>Job</button>
                 <button>Age</button>
                 <button>Keep it interesting</button>
-                <button>Other</button>
+                <button class="other">Other</button>
             </div>
+            <p>What helps you continue a good habit. Choose up to 2.</p>
+            <div class="goodHabits">
+                <button>Seeing my progress</button>
+                <button>Making a real environmental difference</button>
+                <button>Encouragement and positive feedback</button>
+                <button>Learning new things</button>
+                <button>Friendly competition</button>
+                <button>Seeing similar people's success</button>
+                <button>It doesn't require much effort</button>
+                <button class="other">Other</button>
+            </div>
+            <p>What do you think about sending a photo to verify an activity</p>
+            <div class="photoVerification">
+                <button>Yes!</button>
+                <button>That is fine</button>
+                <button>Unsure</button>
+                <button>I would rather not</button>
+                <button>No!</button>
+            </div>
+            <p>Who would you like to compare your progress with. Choose up to 3.</p>
+            <div class="shareProgress">
+                <button>Family members</button>
+                <button>People in the same profession</button>
+                <button>Friends</button>
+                <button>People in my city</button>
+                <button>Colleagues</button>
+                <button>None</button>
+                <button class="other">Other</button>
+            </div>
+            <p>How likely are you to do a daily action tailored to your job</p>
+            <div class="dailyActions">
+                <button>Very likely</button>
+                <button>Likely</button>
+                <button>Neutral</button>
+                <button>Unlikely</button>
+                <button>Very unlikely</button>
+            </div>
+            <h3>4.Usage and Suggestion Style</h3>
+            <p>Approximate water use</p>
+            <div class="waterUse">
+                <button>High</button>
+                <button>Medium</button>
+                <button>Low</button>
+                <button>I don't know</button>
+            </div>
+            <p>Approximate energy use</p>
+            <div class="energyUse">
+                <button>High</button>
+                <button>Medium</button>
+                <button>Low</button>
+                <button>I don't know</button>
+            </div>
+            <p>Approximate waste generation</p>
+            <div class="wasteGeneration">
+                <button>High</button>
+                <button>Medium</button>
+                <button>Low</button>
+                <button>I don't know</button>
+            </div>
+            <p>Preferred suggestion type</p>
+            <div class="suggestionType">
+                <button>Short and simple</button>
+                <button>Practical and step-by-step</button>
+                <button>Creative and unique</button>
+                <button>Funny and entertaining</button>
+                <button>Scientific and explained</button>
+                <button class="other">Other</button>
+            </div>
+            <p>Preferred progress display</p>
+            <div class="progressDisplay">
+                <button>Checklist</button>
+                <button>Percentage</button>
+                <button>Chart</button>
+                <button>Combined</button>
+                <button class="other">Other</button>
+            </div>
+            <div class="otherQuestion">
+                <p>If you chose other, what is your answer?</p>
+                <input class="otherAnswer">
+            </div>
+            <button>Create my personal space</button>
+            <button class="backToLogin">Back to login</button>
         </div>
     </body>
 </html>
