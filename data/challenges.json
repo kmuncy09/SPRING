@@ -1,0 +1,4 @@
+{
+  "_readme": "Each entry maps an activity_id or category to a scientifically sourced impact factor. This file intentionally starts EMPTY of numeric factors: SPRING will not invent environmental savings numbers. To enable numeric impact calculation for an activity, add an entry here with a real source/year/uncertainty, for example: { \"activity_id\": \"reusable_bottle\", \"category\": \"plastic\", \"unit_of_action\": \"bottle\", \"impact_factor\": 12, \"impact_factor_unit\": \"g_plastic_avoided_per_use\", \"uncertainty\": 3, \"impact_factor_source\": \"<cite the specific study/report here>\", \"impact_factor_year\": 2024, \"geographic_scope\": \"global\", \"methodology\": \"<describe>\" }. Until an entry exists for a given activity/category, the engine reports NOT_SCIENTIFICALLY_CALCULABLE for it instead of guessing.",
+  "factors": []
+}
