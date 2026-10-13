@@ -1,6 +1,7 @@
 html{
-    width: 300px;
+    width: 400px;
     align-content: center;
+    margin-left: 500px;
 }
 head {
     h1 {
@@ -15,8 +16,37 @@ button {
     background-color:white;
 }
 .createAnAccount {
-    display:none;
+    display: none;
 }
 .otherQuestion {
     display: none;
+}
+.activities {
+    display: none;
+}
+.profile {
+    display: none;
+}
+.carousel-track-container {
+    position: relative;
+    overflow:hidden;
+    margin: 0 auto;
+}
+.carousel-track {
+    display:flex;
+    transition: transform 0.6s ease-in-out;
+    width: 100%;
+}
+.carousel-slide {
+    min-width: 100%;
+}
+.previous {
+    left:1vw;
+    position: absolute;
+    transform: translateY(-50%);
+}
+.next {
+    right: 1vw;
+    position: absolute;
+    transform: translateY(-100%);
 }

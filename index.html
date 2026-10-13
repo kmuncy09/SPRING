@@ -9,205 +9,267 @@
         <script defer src="script.js"></script>
     </head>
     <body>
-        <h2>Log in to SPRING</h2>
-        <p>Sign into your account</p>
-        <div class="logInBox">
-            <h3>Username:</h3>
-            <input class="username">
-            <h3>Password:</h3>
-            <input class="password">
-            <button class="logIn">Log In</button>
-            <button class="createAccount">Create an Account</button>
+        <div class="logIn">
+            <h2>Log in to SPRING</h2>
+            <p>Sign into your account</p>
+            <div class="logInBox">
+                <h3>Username:</h3>
+                <input class="username">
+                <h3>Password:</h3>
+                <input class="password">
+                <button class="logIn">Log In</button>
+                <button class="createAccount">Create an Account</button>
+            </div>
         </div>
         <div class="createAnAccount">
-            <h3>Username:</h3>
-            <input class="username">
-            <h3>Password:</h3>
-            <input class="password">
-            <h3>Confirm Password:</h3>
-            <input class="passwordConfirm">
-            <h3>1. Basic Information</h3>
-            <p>How old are you?</p>
-            <div class="age">
-                <button>Under 18</button>
-                <button>18-29</button>
-                <button>30-39</button>
-                <button>40-49</button>
-                <button>50-59</button>
-                <button>Over 60</button>
+            <div class="carousel">
+                <button class="previous">Previous</button>
+                <div class="carousel-track-container">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <h3>Username:</h3>
+                            <input class="username">
+                            <h3>Password:</h3>
+                            <input class="password">
+                            <h3>Confirm Password:</h3>
+                            <input class="passwordConfirm">
+                        </div>
+                        <div class="carousel-slide">
+                            <p>How old are you?</p>
+                            <div class="age">
+                                <button>Under 18</button>
+                                <button>18-29</button>
+                                <button>30-39</button>
+                                <button>40-49</button>
+                                <button>50-59</button>
+                                <button>Over 60</button>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <p>What industry do you work in?</p>
+                            <div class="job">
+                                <input class="job">
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <p>How often do you think about the environmental impact of your behavior on a normal day</p>
+                            <div class="environmentalThoughts">
+                                <button>Always</button>
+                                <button>Often</button>
+                                <button>Sometimes</button>
+                                <button>Rarely</button>
+                                <button>Never</button>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <p>How many times did you intentionally do something to help the environment last week?</p>
+                            <div class="environmentalActions">
+                                <button>O</button>
+                                <button>1-2</button>
+                                <button>3-4</button>
+                                <button>5+</button>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <p>How much free time do you have for 5-10 minute activities?</p>
+                            <div class="freeTime">
+                                <button>Very little/None</button>
+                                <button>Some</button>
+                                <button>Medium</button>
+                                <button>A lot</button>
+                                <button>Endless</button>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <p>What is your biggest barrier? Choose up to 3.</p>
+                            <div class="barrierAnswers">
+                                <button>Not enough time</button>
+                                <button>I don't have the needed resources</button>
+                                <button>Not enough motivation</button>
+                                <button>I don't know how or where to start</button>
+                                <button>I feel it won't make much difference</button>
+                                <button>It isn't interesting to me</button>
+                                <button>None</button>
+                                <button class="other">Other</button>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <p>How likely are you to do a simple 5-10 minute task suggested each day?</p>
+                            <div class="taskLikelihood">
+                                <button>Very likely</button>
+                                <button>Likely</button>
+                                <button>Neutral</button>
+                                <button>Unlikely</button>
+                                <button>Very unlikely</button>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <p>What environmental issue do you think needs the most attention?</p>
+                            <input class="problem">
+                        </div>
+                        <div class="carousel-slide">
+                            <p>Which topics interest you most?</p>
+                            <input class="focus">
+                        </div>
+                        <div class="carousel-slide">
+                            <p>What should suggestions be personalized around? Choose up to 3.</p>
+                            <div class="personalizedSuggestions">
+                                <button>My bad habits</button>
+                                <button>Environmental interests</button>
+                                <button>Where I live</button>
+                                <button>Free time</button>
+                                <button>Job</button>
+                                <button>Age</button>
+                                <button>Keep it interesting</button>
+                                <button class="other">Other</button>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <p>What helps you continue a good habit. Choose up to 2.</p>
+                            <div class="goodHabits">
+                                <button>Seeing my progress</button>
+                                <button>Making a real environmental difference</button>
+                                <button>Encouragement and positive feedback</button>
+                                <button>Learning new things</button>
+                                <button>Friendly competition</button>
+                                <button>Seeing similar people's success</button>
+                                <button>It doesn't require much effort</button>
+                                <button class="other">Other</button>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <p>What do you think about sending a photo to verify an activity</p>
+                            <div class="photoVerification">
+                                <button>Yes!</button>
+                                <button>That is fine</button>
+                                <button>Unsure</button>
+                                <button>I would rather not</button>
+                                <button>No!</button>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <p>Who would you like to compare your progress with. Choose up to 3.</p>
+                            <div class="shareProgress">
+                                <button>Family members</button>
+                                <button>People in the same profession</button>
+                                <button>Friends</button>
+                                <button>People in my city</button>
+                                <button>Colleagues</button>
+                                <button>None</button>
+                                <button class="other">Other</button>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <p>How likely are you to do a daily action tailored to your job</p>
+                            <div class="dailyActions">
+                                <button>Very likely</button>
+                                <button>Likely</button>
+                                <button>Neutral</button>
+                                <button>Unlikely</button>
+                                <button>Very unlikely</button>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <p>Approximate water use</p>
+                            <div class="waterUse">
+                                <button>High</button>
+                                <button>Medium</button>
+                                <button>Low</button>
+                                <button>I don't know</button>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <p>Approximate energy use</p>
+                            <div class="energyUse">
+                                <button>High</button>
+                                <button>Medium</button>
+                                <button>Low</button>
+                                <button>I don't know</button>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <p>Approximate waste generation</p>
+                            <div class="wasteGeneration">
+                                <button>High</button>
+                                <button>Medium</button>
+                                <button>Low</button>
+                                <button>I don't know</button>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <p>Preferred suggestion type</p>
+                            <div class="suggestionType">
+                                <button>Short and simple</button>
+                                <button>Practical and step-by-step</button>
+                                <button>Creative and unique</button>
+                                <button>Funny and entertaining</button>
+                                <button>Scientific and explained</button>
+                                <button class="other">Other</button>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <p>Preferred progress display</p>
+                            <div class="progressDisplay">
+                                <button>Checklist</button>
+                                <button>Percentage</button>
+                                <button>Chart</button>
+                                <button>Combined</button>
+                                <button class="other">Other</button>
+                            </div>
+                        </div>
+                        <div class="otherQuestion">
+                            <p>If you chose other, what is your answer?</p>
+                            <input class="otherAnswer">
+                        </div>
+                    </div>
+                </div>
+                <button class="next">Next</button>
             </div>
-            <p>What industry do you work in?</p>
-            <div class="job">
-                <button>Retail</button>
-                <button>Tech</button>
-                <button>Education</button>
-                <button>Hospitality</button>
-                <button>Banking</button>
-                <button>Government</button>
-                <button>Healthcare</button>
-                <button>Law</button>
-                <button>Manufactoring</button>
-                <button>Design</button>
-                <button>Research</button>
-                <button>Real Estate</button>
-                <button>Construction</button>
-                <button>Entertainment</button>
-                <button>I am a student</button>
-                <button class="other">Other</button>
-                <button>None</button>
-            </div>
-            <p>How often do you think about the environmental impact of your behavior on a normal day</p>
-            <div class="environmentalThoughts">
-                <button>Always</button>
-                <button>Often</button>
-                <button>Sometimes</button>
-                <button>Rarely</button>
-                <button>Never</button>
-            </div>
-            <p>How many times did you intentionally do something to help the environment last week?</p>
-            <div class="environmentalActions">
-                <button>O</button>
-                <button>1-2</button>
-                <button>3-4</button>
-                <button>5+</button>
-            </div>
-            <p>How much free time do you have for 5-10 minute activities?</p>
-            <div class="freeTime">
-                <button>Very little/None</button>
-                <button>Some</button>
-                <button>Medium</button>
-                <button>A lot</button>
-                <button>Endless</button>
-            </div>
-            <h3>2. Habits and concerns</h3>
-            <p>What is your biggest barrier? Choose up to 3.</p>
-            <div class="barrierAnswers">
-                <button>Not enough time</button>
-                <button>I don't have the needed resources</button>
-                <button>Not enough motivation</button>
-                <button>I don't know how or where to start</button>
-                <button>I feel it won't make much difference</button>
-                <button>It isn't interesting to me</button>
-                <button>None</button>
-                <button class="other">Other</button>
-            </div>
-            <p>How likely are you to do a simple 5-10 minute task suggested each day?</p>
-            <div class="taskLikelihood">
-                <button>Very likely</button>
-                <button>Likely</button>
-                <button>Neutral</button>
-                <button>Unlikely</button>
-                <button>Very unlikely</button>
-            </div>
-            <p>Which habit or concern would you most like to change now?</p>
-            <input class="habits">
-            <p>Which topics interest you most? Choose up to 3.</p>
-            <div class="topicsInterested">
-                <button>Waste reduction</button>
-                <button>Recycling</button>
-                <button>Eco ideas for my job</button>
-                <button>Water saving</button>
-                <button>Reducing electricity use</button>
-                <button>Reducing plastic use</button>
-                <button>Planting</button>
-                <button>Reusing items</button>
-                <button>Reducing air pollution</button>
-                <button class="other">Other</button>
-            </div>
-            <h3>3.Personalization</h3>
-            <p>What should suggestions be personalized around? Choose up to 3.</p>
-            <div class="personalizedSuggestions">
-                <button>My bad habits</button>
-                <button>Environmental interests</button>
-                <button>Where I live</button>
-                <button>Free time</button>
-                <button>Job</button>
-                <button>Age</button>
-                <button>Keep it interesting</button>
-                <button class="other">Other</button>
-            </div>
-            <p>What helps you continue a good habit. Choose up to 2.</p>
-            <div class="goodHabits">
-                <button>Seeing my progress</button>
-                <button>Making a real environmental difference</button>
-                <button>Encouragement and positive feedback</button>
-                <button>Learning new things</button>
-                <button>Friendly competition</button>
-                <button>Seeing similar people's success</button>
-                <button>It doesn't require much effort</button>
-                <button class="other">Other</button>
-            </div>
-            <p>What do you think about sending a photo to verify an activity</p>
-            <div class="photoVerification">
-                <button>Yes!</button>
-                <button>That is fine</button>
-                <button>Unsure</button>
-                <button>I would rather not</button>
-                <button>No!</button>
-            </div>
-            <p>Who would you like to compare your progress with. Choose up to 3.</p>
-            <div class="shareProgress">
-                <button>Family members</button>
-                <button>People in the same profession</button>
-                <button>Friends</button>
-                <button>People in my city</button>
-                <button>Colleagues</button>
-                <button>None</button>
-                <button class="other">Other</button>
-            </div>
-            <p>How likely are you to do a daily action tailored to your job</p>
-            <div class="dailyActions">
-                <button>Very likely</button>
-                <button>Likely</button>
-                <button>Neutral</button>
-                <button>Unlikely</button>
-                <button>Very unlikely</button>
-            </div>
-            <h3>4.Usage and Suggestion Style</h3>
-            <p>Approximate water use</p>
-            <div class="waterUse">
-                <button>High</button>
-                <button>Medium</button>
-                <button>Low</button>
-                <button>I don't know</button>
-            </div>
-            <p>Approximate energy use</p>
-            <div class="energyUse">
-                <button>High</button>
-                <button>Medium</button>
-                <button>Low</button>
-                <button>I don't know</button>
-            </div>
-            <p>Approximate waste generation</p>
-            <div class="wasteGeneration">
-                <button>High</button>
-                <button>Medium</button>
-                <button>Low</button>
-                <button>I don't know</button>
-            </div>
-            <p>Preferred suggestion type</p>
-            <div class="suggestionType">
-                <button>Short and simple</button>
-                <button>Practical and step-by-step</button>
-                <button>Creative and unique</button>
-                <button>Funny and entertaining</button>
-                <button>Scientific and explained</button>
-                <button class="other">Other</button>
-            </div>
-            <p>Preferred progress display</p>
-            <div class="progressDisplay">
-                <button>Checklist</button>
-                <button>Percentage</button>
-                <button>Chart</button>
-                <button>Combined</button>
-                <button class="other">Other</button>
-            </div>
-            <div class="otherQuestion">
-                <p>If you chose other, what is your answer?</p>
-                <input class="otherAnswer">
-            </div>
-            <button>Create my personal space</button>
+            <button class="createProfile">Create my personal space</button>
             <button class="backToLogin">Back to login</button>
+        </div>
+        <div class="activities">
+            <h2>My Activities</h2>
+            <div class="personalSpace">
+                <h2>Personal Space</h2>
+                <p>Suggestions and paths for changing habits are selected exclusively from your personal library.</p>
+                <button class="environmentalChanges">Update Environmental Information</button>
+                <button class="behaviorChange">Behavior Change Check</button>
+            </div>
+            <div class="personalizedRecommendations">
+                <h2>Personalized Recommendations</h2>
+            </div>
+            <div class="habitChange">
+                <h2>Pathway to Habit Change</h2>
+            </div>
+            <div class="todayOffers">
+                <h2>Today's Offers</h2>
+                <p>Choose a suggested activity that suits you.</p>
+                <button class="suggestions">Today's Suggestions</button>
+            </div>
+            <div class="recordedActivities">
+                <h2>Recorded Activities</h2>
+                <p>No activities have been recorded yet.</p>
+            </div>
+        </div>
+        <div class="profile">
+            <h2>User Profile</h2>
+            <div class="information">
+                <p>@<div class="username"></div></p>
+                <p>Job: <div class="job"></div></p>
+                <p>Environmental Focus: <div class="focus"></div></p>
+                <p>Main problem: <div claSss="problem"></div></p>
+                <p>Goal:</p>
+                <p>Recorded Activities:</p>
+                <p>Points:</p>
+            </div>
+            <div class="progress">
+                <h2>Progress in Areas of Interest</h2>
+            </div>
+            <div class="enviromentalImpact">
+                <h2>My Environmental Impact</h2>
+                <button class="showImpact">Show my Impact</button>
+            </div>
         </div>
     </body>
 </html>
