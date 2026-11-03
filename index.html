@@ -14,7 +14,7 @@
             <p>Sign into your account</p>
             <div class="logInBox">
                 <label for="username">Username:</label><br>
-                <input type="text" name="username">
+                <input type="text" name="username"><br>
                 <label for="password">Password:</label><br>
                 <input type="text" name="password">
                 <button class="logIn">Log In</button>
@@ -180,73 +180,91 @@
                         </div>
                         <div class="carousel-slide">
                             <p>Who would you like to compare your progress with. Choose up to 3.</p>
-                            <div class="shareProgress">
-                                <button>Family members</button>
-                                <button>People in the same profession</button>
-                                <button>Friends</button>
-                                <button>People in my city</button>
-                                <button>Colleagues</button>
-                                <button>None</button>
-                                <button class="other">Other</button>
-                            </div>
+                            <input type="checkbox" name="family" value="Family">
+                            <label for="family">Family members</label><br>
+                            <input type="checkbox" name="sameJob" value="Same Profession">
+                            <label for="sameJob">People in the same profession</label><br>
+                            <input type="checkbox" name="friends" value="Friends">
+                            <label for="friends">Friends</label><br>
+                            <input type="checkbox" name="city" value="Fellow city Dwellers">
+                            <label for="city">People in my city</label><br>
+                            <input type="checkbox" name="colleagues" value="Colleagues">
+                            <label for="colleagues">Colleagues</label><br>
+                            <input type="checkbox" name="none" value="None">
+                            <label for="none">None</label><br>
+                            <button class="other">Other</button>
                         </div>
                         <div class="carousel-slide">
                             <p>How likely are you to do a daily action tailored to your job</p>
-                            <div class="dailyActions">
-                                <button>Very likely</button>
-                                <button>Likely</button>
-                                <button>Neutral</button>
-                                <button>Unlikely</button>
-                                <button>Very unlikely</button>
-                            </div>
+                            <input type="radio" name="likliest" value="Very Likely">
+                            <label for="likliest">Very likely</label><br>
+                            <input type="radio" name="likely" value="Likely">
+                            <label for="likely">Likely</label><br>
+                            <input type="radio" name="neutral" value="Neutral">
+                            <label for="neutral">Neutral</label><br>
+                            <input type="radio" name="unlikely" value="Unlikely">
+                            <label for="unlikely">Unlikely</label><br>
+                            <input type="radio" name="unlikliest" value="Very Unlikely">
+                            <label for="unlikliest">Very unlikely</label><br>
                         </div>
                         <div class="carousel-slide">
                             <p>Approximate water use</p>
-                            <div class="waterUse">
-                                <button>High</button>
-                                <button>Medium</button>
-                                <button>Low</button>
-                                <button>I don't know</button>
-                            </div>
+                            <input type="radio" name="high" value="High">
+                            <label for="high">High</label><br>
+                            <input type="radio" name="medium" value="Medium">
+                            <label for="medium">Medium</label><br>
+                            <input type="radio" name="low" value="Low">
+                            <label for="low">Low</label><br>
+                            <input type="radio" name="idk" value="I don't know">
+                            <label for="idk">I don't know</label><br>
                         </div>
                         <div class="carousel-slide">
                             <p>Approximate energy use</p>
-                            <div class="energyUse">
-                                <button>High</button>
-                                <button>Medium</button>
-                                <button>Low</button>
-                                <button>I don't know</button>
-                            </div>
+                            <input type="radio" name="high" value="High">
+                            <label for="high">High</label><br>
+                            <input type="radio" name="medium" value="Medium">
+                            <label for="medium">Medium</label><br>
+                            <input type="radio" name="low" value="Low">
+                            <label for="low">Low</label><br>
+                            <input type="radio" name="idk" value="I don't know">
+                            <label for="idk">I don't know</label><br>
                         </div>
                         <div class="carousel-slide">
                             <p>Approximate waste generation</p>
-                            <div class="wasteGeneration">
-                                <button>High</button>
-                                <button>Medium</button>
-                                <button>Low</button>
-                                <button>I don't know</button>
-                            </div>
+                            <input type="radio" name="high" value="High">
+                            <label for="high">High</label><br>
+                            <input type="radio" name="medium" value="Medium">
+                            <label for="medium">Medium</label><br>
+                            <input type="radio" name="low" value="Low">
+                            <label for="low">Low</label><br>
+                            <input type="radio" name="idk" value="I don't know">
+                            <label for="idk">I don't know</label><br>
                         </div>
                         <div class="carousel-slide">
                             <p>Preferred suggestion type</p>
-                            <div class="suggestionType">
-                                <button>Short and simple</button>
-                                <button>Practical and step-by-step</button>
-                                <button>Creative and unique</button>
-                                <button>Funny and entertaining</button>
-                                <button>Scientific and explained</button>
-                                <button class="other">Other</button>
-                            </div>
+                            <input type="radio" name="short" value="Short and Simple">
+                            <label for="short">Short and simple</label><br>
+                            <input type="radio" name="practical" value="Practical with Steps">
+                            <label for="practical">Practical and step-by-step</label><br>
+                            <input type="radio" name="creative" value="Creative and Unique">
+                            <label for="creative">Creative and unique</label><br>
+                            <input type="radio" name="funny" value="Funny and Entertaining">
+                            <label for="funny">Funny and entertaining</label><br>
+                            <input type="radio" name="scientific" value="Scientific and Explained">
+                            <label for="scientific">Scientific and explained</label><br>
+                            <button class="other">Other</button>
                         </div>
                         <div class="carousel-slide">
                             <p>Preferred progress display</p>
-                            <div class="progressDisplay">
-                                <button>Checklist</button>
-                                <button>Percentage</button>
-                                <button>Chart</button>
-                                <button>Combined</button>
-                                <button class="other">Other</button>
-                            </div>
+                            <input type="radio" name="checklist" value="Checklist">
+                            <label for="checklist">Checklist</label><br>
+                            <input type="radio" name="percent" value="Percentage">
+                            <label for="percent">Percentage</label><br>
+                            <input type="radio" name="chart" value="Chart">
+                            <label for="chart">Chart</label><br>
+                            <input type="radio" name="combined" value="Combined">
+                            <label for="combined">Combined</label><br>
+                            <button class="other">Other</button>
                         </div>
                         <div class="otherQuestion">
                             <p>If you chose other, what is your answer?</p>
