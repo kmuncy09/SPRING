@@ -9,143 +9,174 @@
         <script defer src="script.js"></script>
     </head>
     <body>
-        <div class="logIn">
+        <form class="logIn">
             <h2>Log in to SPRING</h2>
             <p>Sign into your account</p>
             <div class="logInBox">
-                <h3>Username:</h3>
-                <input class="username">
-                <h3>Password:</h3>
-                <input class="password">
+                <label for="username">Username:</label><br>
+                <input type="text" name="username">
+                <label for="password">Password:</label><br>
+                <input type="text" name="password">
                 <button class="logIn">Log In</button>
                 <button class="createAccount">Create an Account</button>
             </div>
-        </div>
-        <div class="createAnAccount">
+        </form>
+        <form class="createAnAccount">
             <div class="carousel">
                 <button class="previous">Previous</button>
                 <div class="carousel-track-container">
                     <div class="carousel-track">
                         <div class="carousel-slide">
-                            <h3>Username:</h3>
-                            <input class="username">
-                            <h3>Password:</h3>
-                            <input class="password">
-                            <h3>Confirm Password:</h3>
-                            <input class="passwordConfirm">
+                            <label for="username">Username:</label><br>
+                            <input type="text" name="username">
+                            <label for="password">Password:</label><br>
+                            <input type="text" name="password">
+                            <label for="passwordConfirm">Confirm Password:</label><br>
+                            <input type="text" name="passwordConfirm">
                         </div>
                         <div class="carousel-slide">
                             <p>How old are you?</p>
-                            <div class="age">
-                                <button>Under 18</button>
-                                <button>18-29</button>
-                                <button>30-39</button>
-                                <button>40-49</button>
-                                <button>50-59</button>
-                                <button>Over 60</button>
-                            </div>
+                            <input type="radio" name="youth" value="Under 18">
+                            <label for="youth">Under 18</label><br>
+                            <input type="radio" name="twenties" value="18-29">
+                            <label for="twenties">18-29</label><br>
+                            <input type="radio" name="thirties" value="30-39">
+                            <label for="thirties">30-39</label><br>
+                            <input type="radio" name="fourties" value="40-49">
+                            <label for="fourties">40-49</label><br>
+                            <input type="radio" name="fifties" value="50-59">
+                            <label for="fifties">50-59</label><br>
+                            <input type="radio" name="old" value="Over 60">
+                            <label for="old">Over 60</label><br>
                         </div>
                         <div class="carousel-slide">
-                            <p>What industry do you work in?</p>
-                            <div class="job">
-                                <input class="job">
-                            </div>
+                            <label for="job">What industry do you work in?</label><br>
+                            <input type="text" name="job">
                         </div>
                         <div class="carousel-slide">
                             <p>How often do you think about the environmental impact of your behavior on a normal day</p>
-                            <div class="environmentalThoughts">
-                                <button>Always</button>
-                                <button>Often</button>
-                                <button>Sometimes</button>
-                                <button>Rarely</button>
-                                <button>Never</button>
-                            </div>
+                            <input type="radio" name="always" value="Always">
+                            <label for="always">Always</label><br>
+                            <input type="radio" name="often" value="Often">
+                            <label for="often">Often</label><br>
+                            <input type="sometimes" name="sometimes" value="Sometimes">
+                            <label for="sometimes">Sometimes</label><br>
+                            <input type="rarely" name="rarely" value="Rarely">
+                            <label for="rarely">Rarely</label><br>
+                            <input type="radio" name="never" value="Never">
+                            <label for="never">Never</label><br>
                         </div>
                         <div class="carousel-slide">
                             <p>How many times did you intentionally do something to help the environment last week?</p>
-                            <div class="environmentalActions">
-                                <button>O</button>
-                                <button>1-2</button>
-                                <button>3-4</button>
-                                <button>5+</button>
-                            </div>
+                            <input type="radio" name="zero" value="0">
+                            <label for="zero">0</label><br>
+                            <input type="radio" name="oneTwo" value="1-2">
+                            <label for="oneTwo">1-2</label><br>
+                            <input type="radio" name="threeFour" value="3-4">
+                            <label for="threeFour">3-4</label><br>
+                            <input type="radio" name="five" value="5+">
+                            <label for="five">5+</label><br>
                         </div>
                         <div class="carousel-slide">
                             <p>How much free time do you have for 5-10 minute activities?</p>
-                            <div class="freeTime">
-                                <button>Very little/None</button>
-                                <button>Some</button>
-                                <button>Medium</button>
-                                <button>A lot</button>
-                                <button>Endless</button>
-                            </div>
+                            <input type="radio" name="none" value="Very little/None">
+                            <label for="none">Very little/None</label><br>
+                            <input type="radio" name="some" value="Some">
+                            <label for="some">Some</label><br>
+                            <input type="radio" name="medium" value="Medium">
+                            <label for="medium">Medium</label><br>
+                            <input type="radio" name="lots" value="A lot">
+                            <label for="lots">A lot</label><br>
+                            <input type="radio" name="endless" value="Endless">
+                            <label for="endless">Endless</label><br>
                         </div>
                         <div class="carousel-slide">
                             <p>What is your biggest barrier? Choose up to 3.</p>
-                            <div class="barrierAnswers">
-                                <button>Not enough time</button>
-                                <button>I don't have the needed resources</button>
-                                <button>Not enough motivation</button>
-                                <button>I don't know how or where to start</button>
-                                <button>I feel it won't make much difference</button>
-                                <button>It isn't interesting to me</button>
-                                <button>None</button>
-                                <button class="other">Other</button>
-                            </div>
+                            <input type="checkbox" name="time" value="Lacking time">
+                            <label for="time">Not enough time</label><br>
+                            <input type="checkbox" name="resources" value="Lacking needed resources">
+                            <label for="resources">I don't have the needed resources</label><br>
+                            <input type="checkbox" name="motivation" value="Lacking motivation">
+                            <label for="motivation">Not enough motivation</label><br>
+                            <input type="checkbox" name="information" value="Lack of information">
+                            <label for="information">I don't know how or where to start</label><br>
+                            <input type="checkbox" name="difference" value="Lack of impact">
+                            <label for="difference">I feel it won't make much difference</label><br>
+                            <input type="checkbox" name="interest" value="Lack of interest">
+                            <label for="interest">It isn't interesting to me</label><br>
+                            <input type="checkbox" name="none" value="None">
+                            <label for="none">None</label><br>
+                            <button class="other">Other</button>
                         </div>
                         <div class="carousel-slide">
                             <p>How likely are you to do a simple 5-10 minute task suggested each day?</p>
-                            <div class="taskLikelihood">
-                                <button>Very likely</button>
-                                <button>Likely</button>
-                                <button>Neutral</button>
-                                <button>Unlikely</button>
-                                <button>Very unlikely</button>
-                            </div>
+                            <input type="radio" name="likliest" value="Very Likely">
+                            <label for="likliest">Very likely</label><br>
+                            <input type="radio" name="likely" value="Likely">
+                            <label for="likely">Likely</label><br>
+                            <input type="radio" name="neutral" value="Neutral">
+                            <label for="neutral">Neutral</label><br>
+                            <input type="radio" name="unlikely" value="Unlikely">
+                            <label for="unlikely">Unlikely</label><br>
+                            <input type="radio" name="unlikliest" value="Very Unlikely">
+                            <label for="unlikliest">Very unlikely</label><br>
                         </div>
                         <div class="carousel-slide">
-                            <p>What environmental issue do you think needs the most attention?</p>
-                            <input class="problem">
+                            <label for="problem">What environmental issue do you think needs the most attention?</label><br>
+                            <input type="text" name="problem">
                         </div>
                         <div class="carousel-slide">
-                            <p>Which topics interest you most?</p>
-                            <input class="focus">
+                            <label for="focus">Which topics interest you most?</label><br>
+                            <input type="text" name="focus">
                         </div>
                         <div class="carousel-slide">
                             <p>What should suggestions be personalized around? Choose up to 3.</p>
-                            <div class="personalizedSuggestions">
-                                <button>My bad habits</button>
-                                <button>Environmental interests</button>
-                                <button>Where I live</button>
-                                <button>Free time</button>
-                                <button>Job</button>
-                                <button>Age</button>
-                                <button>Keep it interesting</button>
-                                <button class="other">Other</button>
-                            </div>
+                            <input type="checkbox" name="badHabits" value="Bad Habits">
+                            <label for="badHabits">My bad habits</label><br>
+                            <input type="checkbox" name="interests" value="Environmental Interests">
+                            <label for="interests">Environmental interests</label><br>
+                            <input type="checkbox" name="home" value="Where I live">
+                            <label for="home">Where I live</label><br>
+                            <input type="checkbox" name="time" value="Free time">
+                            <label for="time">Free time</label><br>
+                            <input type="checkbox" name="job" value="Job">
+                            <label for="job">Job</label><br>
+                            <input type="checkbox" name="age" value="Age">
+                            <label for="age">Age</label><br>
+                            <input type="checkbox" name="random" value="Random">
+                            <label for="random">Keep it interesting</label><br>
+                            <button class="other">Other</button>
                         </div>
                         <div class="carousel-slide">
                             <p>What helps you continue a good habit. Choose up to 2.</p>
-                            <div class="goodHabits">
-                                <button>Seeing my progress</button>
-                                <button>Making a real environmental difference</button>
-                                <button>Encouragement and positive feedback</button>
-                                <button>Learning new things</button>
-                                <button>Friendly competition</button>
-                                <button>Seeing similar people's success</button>
-                                <button>It doesn't require much effort</button>
-                                <button class="other">Other</button>
-                            </div>
+                            <input type="checkbox" name="progress" value="Progress bar">
+                            <label for="progress">Seeing my progress</label><br>
+                            <input type="checkbox" name="realDifference" value="Real Environmental Difference">
+                            <label for="realDifference">Making a real environmental difference</label><br>
+                            <input type="checkbox" name="encourage" value="Encouragement and Positive feedback">
+                            <label for="encourage">Encouragement and positive feedback</label><br>
+                            <input type="checkbox" name="learning" value="Learning new Things">
+                            <label for="learning">Learning new things</label><br>
+                            <input type="checkbox" name="competition" value="Friendly Competition">
+                            <label for="competition">Friendly competition</label><br>
+                            <input type="checkbox" name="otherSuccess" value="Others Success">
+                            <label for="otherSuccess">Seeing similar people's success</label><br>
+                            <input type="checkbox" name="effort" value="Low effort">
+                            <label for="effort">It doesn't require much effort</label><br>
+                            <button class="other">Other</button>
                         </div>
                         <div class="carousel-slide">
                             <p>What do you think about sending a photo to verify an activity</p>
-                            <div class="photoVerification">
-                                <button>Yes!</button>
-                                <button>That is fine</button>
-                                <button>Unsure</button>
-                                <button>I would rather not</button>
-                                <button>No!</button>
-                            </div>
+                            <input type="radio" name="yes" value="Yes"> 
+                            <label for="yes">Yes!</label><br>
+                            <input type="radio" name="fine" value="That's fine">
+                            <label for="fine">That is fine</label><br>
+                            <input type="radio" name="unsure" value="Unsure">
+                            <label for="unsure">Unsure</label><br>
+                            <input type="radio" name="eh" value="Rather Not">
+                            <label for="eh">I would rather not</label><br>
+                            <input type="radio" name="no" value="No">
+                            <label for="no">No!</label><br>
                         </div>
                         <div class="carousel-slide">
                             <p>Who would you like to compare your progress with. Choose up to 3.</p>
@@ -227,49 +258,6 @@
             </div>
             <button class="createProfile">Create my personal space</button>
             <button class="backToLogin">Back to login</button>
-        </div>
-        <div class="activities">
-            <h2>My Activities</h2>
-            <div class="personalSpace">
-                <h2>Personal Space</h2>
-                <p>Suggestions and paths for changing habits are selected exclusively from your personal library.</p>
-                <button class="environmentalChanges">Update Environmental Information</button>
-                <button class="behaviorChange">Behavior Change Check</button>
-            </div>
-            <div class="personalizedRecommendations">
-                <h2>Personalized Recommendations</h2>
-            </div>
-            <div class="habitChange">
-                <h2>Pathway to Habit Change</h2>
-            </div>
-            <div class="todayOffers">
-                <h2>Today's Offers</h2>
-                <p>Choose a suggested activity that suits you.</p>
-                <button class="suggestions">Today's Suggestions</button>
-            </div>
-            <div class="recordedActivities">
-                <h2>Recorded Activities</h2>
-                <p>No activities have been recorded yet.</p>
-            </div>
-        </div>
-        <div class="profile">
-            <h2>User Profile</h2>
-            <div class="information">
-                <p>@<div class="username"></div></p>
-                <p>Job: <div class="job"></div></p>
-                <p>Environmental Focus: <div class="focus"></div></p>
-                <p>Main problem: <div claSss="problem"></div></p>
-                <p>Goal:</p>
-                <p>Recorded Activities:</p>
-                <p>Points:</p>
-            </div>
-            <div class="progress">
-                <h2>Progress in Areas of Interest</h2>
-            </div>
-            <div class="enviromentalImpact">
-                <h2>My Environmental Impact</h2>
-                <button class="showImpact">Show my Impact</button>
-            </div>
-        </div>
+        </form>
     </body>
 </html>
